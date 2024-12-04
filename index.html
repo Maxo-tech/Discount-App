@@ -12,22 +12,20 @@
       <p>Pay less and get more!</p>
     </div>
     <form>
-      <legend>Full Name</legend>
-      <label><input type="text" required></label>
-      <legend>Age</legend>
-      <!-- <label><input type="number"></label> -->
-      <select required>
-        <option>0 - 12</option>
-        <option>13 - 18</option>
-        <option>19 - 40</option>
-        <option>41 - 60</option>
-        <option>60 - Above</option>
+      <label for="fullName">Full Name:</label>
+      <input type="text" name="fullName" placeholder="Enter Full Name">
+      
+      <label for="age">Age:</label>
+      <input type="number" name="age" placeholder="Enter your age" required min="0">
+      
+      <label for="totalBill">Total Bill ($):</label>
+      <input input="number" name="totalBill" placeholder="Enter Bill" required min="0">
       </select>
-      <legend>Total Bill</legend>
-      <label><input type="number" name="$100" required></label>
-      <button>Calculate Discount</button>
+      
+      <button type="button" onclick="calculateDiscount()">Calculate Discount</button>
     </form>
-    <h2>Display at below</h2>
+    
+    <div></div>
   </div>
 </body>
 </html>
