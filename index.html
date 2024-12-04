@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Discount App Task</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div>
@@ -11,21 +12,20 @@
       <h1>Discount App</h1>
       <p>Pay less and get more!</p>
     </div>
-    <form>
+    <form id="discountForm">
       <label for="fullName">Full Name:</label>
-      <input type="text" name="fullName" placeholder="Enter Full Name">
+      <input id="fullName" type="text" name="fullName" placeholder="Enter Full Name" required>
       
       <label for="age">Age:</label>
-      <input type="number" name="age" placeholder="Enter your age" required min="0">
+      <input id="age" type="number" name="age" placeholder="Enter your age" required min="0">
       
       <label for="totalBill">Total Bill ($):</label>
-      <input input="number" name="totalBill" placeholder="Enter Bill" required min="0">
-      </select>
+      <input id="totalBill" input="number" name="totalBill" placeholder="Enter Bill" required min="0">
       
       <button type="button" onclick="calculateDiscount()">Calculate Discount</button>
     </form>
-    
-    <div></div>
+    <div id="result" class="result"></div>
   </div>
+  <script src="js/script.js"></script>
 </body>
 </html>
