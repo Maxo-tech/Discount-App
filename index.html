@@ -8,22 +8,26 @@
 <body>
   <div>
     <div>
-      <header>
-        <img src="" alt="">
-        <h1>Discount Calculation</h1>
-        <p>Pay less and get more!</p>
-      </header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="index.html">Calculate</a></li>
-          <li><a href="index.html">Products</a></li>
-        </ul>
-      </nav>
+      <h1>Discount App</h1>
+      <p>Pay less and get more!</p>
     </div>
     <form>
-
+      <legend>Full Name</legend>
+      <label><input type="text" required></label>
+      <legend>Age</legend>
+      <!-- <label><input type="number"></label> -->
+      <select required>
+        <option>0 - 12</option>
+        <option>13 - 18</option>
+        <option>19 - 40</option>
+        <option>41 - 60</option>
+        <option>60 - Above</option>
+      </select>
+      <legend>Total Bill</legend>
+      <label><input type="number" name="$100" required></label>
+      <button>Calculate Discount</button>
     </form>
+    <h2>Display at below</h2>
   </div>
 </body>
 </html>
