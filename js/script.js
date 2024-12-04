@@ -1,5 +1,5 @@
 function calculateDiscount() {
-  // Get form values
+  // Grabbing Form Elements
   const fullName = document.getElementById('fullName').value;
   const age = parseInt(document.getElementById('age').value);
   const totalBill = parseFloat(document.getElementById('totalBill').value);
@@ -33,9 +33,9 @@ const discountAmount = totalBill * discountRate;
       <h3>Discount Details</h3>
       <p><strong>Name:</strong> ${fullName}</p>
       <p><strong>Age:</strong> ${age}</p>
-      <p><strong>Total Bill:</strong> $${totalBill.toFixed(2)}</p>
+      <p><strong>Total Bill:</strong> &#8358;${totalBill.toFixed(2)}</p>
       <p><strong>Discount Rate:</strong> ${(discountRate * 100).toFixed(0)}%</p>
-      <p><strong>Discount Amount:</strong> $${discountAmount.toFixed(2)}</p>
-<p><strong>Final Bill:</strong> $${finalBill.toFixed(2)}</p>
+      <p><strong>Discount Amount:</strong> &#8358;${discountAmount.toFixed(2)}</p>
+<p><strong>Final Bill:</strong> &#8358;${finalBill.toFixed(2)}</p>
   `;
 }
